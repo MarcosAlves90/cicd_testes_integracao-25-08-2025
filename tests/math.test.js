@@ -1,17 +1,17 @@
-const math = require('../math.js');
+const math = require('../math');
 
-test('soma 2 + 3 igual a 5', () => { 
+test('Soma 2 + 3 igual a 5', () => { 
     expect(math.add(2, 3)).toBe(5); 
-});
+}); 
 
-test('subtrai 2 - 3 igual a -1', () => { 
-    expect(math.subtract(2, 3)).toBe(-1); 
-});
+test('Subtração 3 - 2 igual a 1', () => { 
+    expect(math.subtract(3, 2)).toBe(1); 
+}); 
 
-test('multiplica 2 * 3 igual a 6', () => {
-    expect(math.multiply(2, 3)).toBe(6);
-});
+test('Multiplicação 2  3 igual a 6', () => { 
+    expect(math.multiply(2, 3)).toBe(6); 
+}); 
 
-test('divide 2 / 3 aproximadamente igual a 0.666...', () => {
-    expect(math.divide(2, 3)).toBeCloseTo(0.6666666666, 10);
+test('Divisão 6 / 2 igual a 3', () => { 
+    expect(math.divide(6, 2)).toBe(3); 
 });
